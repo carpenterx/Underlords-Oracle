@@ -1,0 +1,202 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Underlords_Oracle</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\heroes\Abaddon_portrait_icon.png" />
+    <None Remove="Resources\heroes\Alchemist_portrait_icon.png" />
+    <None Remove="Resources\heroes\Anti-Mage_portrait_icon.png" />
+    <None Remove="Resources\heroes\Axe_portrait_icon.png" />
+    <None Remove="Resources\heroes\Batrider_portrait_icon.png" />
+    <None Remove="Resources\heroes\Beastmaster_portrait_icon.png" />
+    <None Remove="Resources\heroes\Bounty_Hunter_portrait_icon.png" />
+    <None Remove="Resources\heroes\Bristleback_portrait_icon.png" />
+    <None Remove="Resources\heroes\Chaos_Knight_portrait_icon.png" />
+    <None Remove="Resources\heroes\Crystal_Maiden_portrait_icon.png" />
+    <None Remove="Resources\heroes\Dazzle_portrait_icon.png" />
+    <None Remove="Resources\heroes\Death_Prophet_portrait_icon.png" />
+    <None Remove="Resources\heroes\Doom_portrait_icon.png" />
+    <None Remove="Resources\heroes\Dragon_Knight_portrait_icon.png" />
+    <None Remove="Resources\heroes\Drow_Ranger_portrait_icon.png" />
+    <None Remove="Resources\heroes\Earth_Spirit_portrait_icon.png" />
+    <None Remove="Resources\heroes\Ember_Spirit_portrait_icon.png" />
+    <None Remove="Resources\heroes\Enchantress_portrait_icon.png" />
+    <None Remove="Resources\heroes\Faceless_Void_portrait_icon.png" />
+    <None Remove="Resources\heroes\Juggernaut_portrait_icon.png" />
+    <None Remove="Resources\heroes\Keeper_of_the_Light_portrait_icon.png" />
+    <None Remove="Resources\heroes\Kunkka_portrait_icon.png" />
+    <None Remove="Resources\heroes\Legion_Commander_portrait_icon.png" />
+    <None Remove="Resources\heroes\Lich_portrait_icon.png" />
+    <None Remove="Resources\heroes\Lifestealer_portrait_icon.png" />
+    <None Remove="Resources\heroes\Lina_portrait_icon.png" />
+    <None Remove="Resources\heroes\Lone_Druid_portrait_icon.png" />
+    <None Remove="Resources\heroes\Luna_portrait_icon.png" />
+    <None Remove="Resources\heroes\Lycan_portrait_icon.png" />
+    <None Remove="Resources\heroes\Magnus_portrait_icon.png" />
+    <None Remove="Resources\heroes\Medusa_portrait_icon.png" />
+    <None Remove="Resources\heroes\Meepo_portrait_icon.png" />
+    <None Remove="Resources\heroes\Mirana_portrait_icon.png" />
+    <None Remove="Resources\heroes\Natures_Prophet_portrait_icon.png" />
+    <None Remove="Resources\heroes\Omniknight_portrait_icon.png" />
+    <None Remove="Resources\heroes\Pangolier_portrait_icon.png" />
+    <None Remove="Resources\heroes\Phantom_Assassin_portrait_icon.png" />
+    <None Remove="Resources\heroes\Puck_portrait_icon.png" />
+    <None Remove="Resources\heroes\Pudge_portrait_icon.png" />
+    <None Remove="Resources\heroes\Queen_of_Pain_portrait_icon.png" />
+    <None Remove="Resources\heroes\Rubick_portrait_icon.png" />
+    <None Remove="Resources\heroes\Shadow_Demon_portrait_icon.png" />
+    <None Remove="Resources\heroes\Shadow_Shaman_portrait_icon.png" />
+    <None Remove="Resources\heroes\Slardar_portrait_icon.png" />
+    <None Remove="Resources\heroes\Slark_portrait_icon.png" />
+    <None Remove="Resources\heroes\Snapfire_portrait_icon.png" />
+    <None Remove="Resources\heroes\Spectre_portrait_icon.png" />
+    <None Remove="Resources\heroes\Spirit_Breaker_portrait_icon.png" />
+    <None Remove="Resources\heroes\Storm_Spirit_portrait_icon.png" />
+    <None Remove="Resources\heroes\Sven_portrait_icon.png" />
+    <None Remove="Resources\heroes\Templar_Assassin_portrait_icon.png" />
+    <None Remove="Resources\heroes\Terrorblade_portrait_icon.png" />
+    <None Remove="Resources\heroes\Tidehunter_portrait_icon.png" />
+    <None Remove="Resources\heroes\Treant_Protector_portrait_icon.png" />
+    <None Remove="Resources\heroes\Troll_Warlord_portrait_icon.png" />
+    <None Remove="Resources\heroes\Tusk_portrait_icon.png" />
+    <None Remove="Resources\heroes\Vengeful_Spirit_portrait_icon.png" />
+    <None Remove="Resources\heroes\Venomancer_portrait_icon.png" />
+    <None Remove="Resources\heroes\Viper_portrait_icon.png" />
+    <None Remove="Resources\heroes\Void_Spirit_portrait_icon.png" />
+    <None Remove="Resources\heroes\Windranger_portrait_icon.png" />
+    <None Remove="Resources\heroes\Wraith_King_portrait_icon.png" />
+    <None Remove="Resources\synergies\Assassin.png" />
+    <None Remove="Resources\synergies\Brawny.png" />
+    <None Remove="Resources\synergies\Brute.png" />
+    <None Remove="Resources\synergies\Champion.png" />
+    <None Remove="Resources\synergies\Demon.png" />
+    <None Remove="Resources\synergies\Dragon.png" />
+    <None Remove="Resources\synergies\Elusive.png" />
+    <None Remove="Resources\synergies\empty.png" />
+    <None Remove="Resources\synergies\Fallen.png" />
+    <None Remove="Resources\synergies\Healer.png" />
+    <None Remove="Resources\synergies\Heartless.png" />
+    <None Remove="Resources\synergies\Human.png" />
+    <None Remove="Resources\synergies\Hunter.png" />
+    <None Remove="Resources\synergies\Knight.png" />
+    <None Remove="Resources\synergies\Mage.png" />
+    <None Remove="Resources\synergies\Magus.png" />
+    <None Remove="Resources\synergies\Poisoner.png" />
+    <None Remove="Resources\synergies\Rogue.png" />
+    <None Remove="Resources\synergies\Savage.png" />
+    <None Remove="Resources\synergies\Scaled.png" />
+    <None Remove="Resources\synergies\Shaman.png" />
+    <None Remove="Resources\synergies\Spirit.png" />
+    <None Remove="Resources\synergies\Summoner.png" />
+    <None Remove="Resources\synergies\Swordsman.png" />
+    <None Remove="Resources\synergies\Troll.png" />
+    <None Remove="Resources\synergies\Vigilant.png" />
+    <None Remove="Resources\synergies\Void.png" />
+    <None Remove="Resources\synergies\Warrior.png" />
+    <None Remove="Resources\underlords.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\heroes\Abaddon_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Alchemist_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Anti-Mage_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Axe_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Batrider_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Beastmaster_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Bounty_Hunter_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Bristleback_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Chaos_Knight_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Crystal_Maiden_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Dazzle_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Death_Prophet_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Doom_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Dragon_Knight_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Drow_Ranger_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Earth_Spirit_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Ember_Spirit_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Enchantress_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Faceless_Void_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Juggernaut_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Keeper_of_the_Light_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Kunkka_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Legion_Commander_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Lich_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Lifestealer_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Lina_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Lone_Druid_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Luna_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Lycan_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Magnus_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Medusa_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Meepo_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Mirana_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Natures_Prophet_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Omniknight_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Pangolier_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Phantom_Assassin_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Puck_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Pudge_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Queen_of_Pain_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Rubick_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Shadow_Demon_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Shadow_Shaman_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Slardar_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Slark_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Snapfire_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Spectre_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Spirit_Breaker_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Storm_Spirit_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Sven_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Templar_Assassin_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Terrorblade_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Tidehunter_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Treant_Protector_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Troll_Warlord_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Tusk_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Vengeful_Spirit_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Venomancer_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Viper_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Void_Spirit_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Windranger_portrait_icon.png" />
+    <Resource Include="Resources\heroes\Wraith_King_portrait_icon.png" />
+    <Resource Include="Resources\synergies\Assassin.png" />
+    <Resource Include="Resources\synergies\Brawny.png" />
+    <Resource Include="Resources\synergies\Brute.png" />
+    <Resource Include="Resources\synergies\Champion.png" />
+    <Resource Include="Resources\synergies\Demon.png" />
+    <Resource Include="Resources\synergies\Dragon.png" />
+    <Resource Include="Resources\synergies\Elusive.png" />
+    <Resource Include="Resources\synergies\empty.png" />
+    <Resource Include="Resources\synergies\Fallen.png" />
+    <Resource Include="Resources\synergies\Healer.png" />
+    <Resource Include="Resources\synergies\Heartless.png" />
+    <Resource Include="Resources\synergies\Human.png" />
+    <Resource Include="Resources\synergies\Hunter.png" />
+    <Resource Include="Resources\synergies\Knight.png" />
+    <Resource Include="Resources\synergies\Mage.png" />
+    <Resource Include="Resources\synergies\Magus.png" />
+    <Resource Include="Resources\synergies\Poisoner.png" />
+    <Resource Include="Resources\synergies\Rogue.png" />
+    <Resource Include="Resources\synergies\Savage.png" />
+    <Resource Include="Resources\synergies\Scaled.png" />
+    <Resource Include="Resources\synergies\Shaman.png" />
+    <Resource Include="Resources\synergies\Spirit.png" />
+    <Resource Include="Resources\synergies\Summoner.png" />
+    <Resource Include="Resources\synergies\Swordsman.png" />
+    <Resource Include="Resources\synergies\Troll.png" />
+    <Resource Include="Resources\synergies\Vigilant.png" />
+    <Resource Include="Resources\synergies\Void.png" />
+    <Resource Include="Resources\synergies\Warrior.png" />
+    <EmbeddedResource Include="Resources\underlords.json" />
+  </ItemGroup>
+
+</Project>
