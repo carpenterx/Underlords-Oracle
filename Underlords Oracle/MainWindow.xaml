@@ -180,15 +180,21 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Border CornerRadius="6" BorderBrush="DarkGray" BorderThickness="1" Padding="4">
-                        <StackPanel Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+                            
                             <Image Width="30" Height="40" Source="{Binding [Name], Mode=OneWay, Converter={StaticResource HeroNameToIconConverter}}" />
 
-                            <StackPanel Width="228">
+                            <StackPanel Grid.Column="1">
                                 <TextBlock Text="{Binding [Name]}" FontSize="16" Margin="4,0,0,0" HorizontalAlignment="Center" />
                                 <TextBlock Text="{Binding [Tier], StringFormat={}Tier: {0}}" Margin="4,0,0,0" HorizontalAlignment="Center" />
                             </StackPanel>
 
-                            <ItemsControl Width="94" ItemsSource="{Binding [Synergies], Mode=OneWay, Converter={StaticResource SynergiesToIconsListConverter}}">
+                            <ItemsControl Grid.Column="2" ItemsSource="{Binding [Synergies], Mode=OneWay, Converter={StaticResource SynergiesToIconsListConverter}}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <StackPanel Orientation="Horizontal" />
@@ -204,10 +210,16 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
-                        </StackPanel>
+                        </Grid>
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="Padding" Value="2"/>
+                </Style>
+            </ListView.ItemContainerStyle>
         </ListView>
     </Grid>
 </Window>
