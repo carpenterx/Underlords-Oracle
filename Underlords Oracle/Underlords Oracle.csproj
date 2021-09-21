@@ -103,10 +103,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="search_locate_find_icon-icons.com_67287.ico" />
+    <Resource Include="search_locate_find_icon-icons.com_67287.ico" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.7" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 

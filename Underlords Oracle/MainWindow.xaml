@@ -1,12 +1,18 @@
-﻿<Window x:Class="Underlords_Oracle.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Underlords_Oracle"
-        xmlns:models="clr-namespace:Underlords_Oracle.Models"
-        mc:Ignorable="d"
-        Title="Underlords Oracle" Height="800" Width="800">
+﻿<mah:MetroWindow
+    x:Class="Underlords_Oracle.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Underlords_Oracle"
+    xmlns:models="clr-namespace:Underlords_Oracle.Models"
+    xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+    mc:Ignorable="d"
+    Title="Underlords Oracle"
+    Height="800" Width="800"
+    TitleCharacterCasing="Normal"
+    ShowIconOnTitleBar="True"
+    Icon="search_locate_find_icon-icons.com_67287.ico">
     <Window.Resources>
         <models:HeroNameToIconConverter x:Key="HeroNameToIconConverter"/>
         <models:SynergiesToIconsListConverter x:Key="SynergiesToIconsListConverter"/>
@@ -30,7 +36,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Orientation="Horizontal" Margin="4">
+        <StackPanel Orientation="Horizontal" Margin="4,10,4,10">
             <Label Content="hero with" Height="24" Width="60"/>
             <ComboBox x:Name="comparisonCombo" SelectedIndex="0" Width="80" Height="24">
                 <ComboBoxItem >
@@ -41,14 +47,14 @@
                 </ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="statsCombo" SelectedIndex="0" Width="100" Height="24"/>
-            <Button Content="GO" Click="ExecuteFirstQuery" Width="30" Height="24"/>
+            <Button Content="GO" Click="ExecuteFirstQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Column="1" Content="Example: hero with highest DPS" Height="30" Margin="4"/>
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="4">
+        <StackPanel Grid.Row="1" Orientation="Horizontal"  Margin="4,10,4,10">
             <Label Content="all tier" Height="24" Width="50"/>
-            <ComboBox x:Name="tierCombo4" SelectedIndex="0" Width="35" Height="24">
+            <ComboBox x:Name="tierCombo4" SelectedIndex="0" Width="42" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="1"/>
                 </ComboBoxItem>
@@ -65,15 +71,15 @@
                     <TextBlock Text="5"/>
                 </ComboBoxItem>
             </ComboBox>
-            <Label Content="heroes" Height="24" Width="50"/>
-            <Button Content="GO" Click="ExecuteFourthQuery" Width="30" Height="24"/>
+            <Label Content="heroes" HorizontalContentAlignment="Center" Height="24" Width="50"/>
+            <Button Content="GO" Click="ExecuteFourthQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Row="1" Grid.Column="1" Content="Example: all tier 3 heroes" Height="30" Margin="4"/>
 
-        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="4">
+        <StackPanel Grid.Row="2" Orientation="Horizontal"  Margin="4,10,4,10">
             <Label Content="all tier" Height="24" Width="50"/>
-            <ComboBox x:Name="tierCombo5" SelectedIndex="0" Width="35" Height="24">
+            <ComboBox x:Name="tierCombo5" SelectedIndex="0" Width="42" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="1"/>
                 </ComboBoxItem>
@@ -91,14 +97,14 @@
                 </ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="synergyCombo5" Width="100" SelectedIndex="0" Height="24"/>
-            <Button Content="GO" Click="ExecuteFifthQuery" Width="30" Height="24"/>
+            <Button Content="GO" Click="ExecuteFifthQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Row="2" Grid.Column="1" Content="Example: all tier 2 demon" Height="30" Margin="4"/>
 
-        <StackPanel  Grid.Row="3" Orientation="Horizontal" Margin="4">
+        <StackPanel  Grid.Row="3" Orientation="Horizontal"  Margin="4,10,4,10">
             <Label Content="tier" Height="24" Width="30"/>
-            <ComboBox x:Name="tierCombo2" SelectedIndex="0" Width="35" Height="24">
+            <ComboBox x:Name="tierCombo2" SelectedIndex="0" Width="42" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="1"/>
                 </ComboBoxItem>
@@ -115,7 +121,7 @@
                     <TextBlock Text="5"/>
                 </ComboBoxItem>
             </ComboBox>
-            <Label Content="hero with" Height="24" Width="60"/>
+            <Label Content="hero with" HorizontalContentAlignment="Center" Height="24" Width="62"/>
             <ComboBox x:Name="comparisonCombo2" SelectedIndex="0" Width="80" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="highest"/>
@@ -125,13 +131,13 @@
                 </ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="statsCombo2" SelectedIndex="0" Width="100" Height="24"/>
-            <Button Content="GO" Click="ExecuteSecondQuery" Width="30" Height="24"/>
+            <Button Content="GO" Click="ExecuteSecondQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Row="3" Grid.Column="1" Content="Example: tier 4 hero with lowest armor" Height="30" Margin="4"/>
 
-        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="4">
-            <ComboBox x:Name="starCombo3" SelectedIndex="0" Width="35" Height="24">
+        <StackPanel Grid.Row="4" Orientation="Horizontal"  Margin="4,10,4,10">
+            <ComboBox x:Name="starCombo3" SelectedIndex="0" Width="42" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="1"/>
                 </ComboBoxItem>
@@ -142,7 +148,7 @@
                     <TextBlock Text="3"/>
                 </ComboBoxItem>
             </ComboBox>
-            <Label Content="star hero with" Height="24" Width="86"/>
+            <Label Content="star hero with" HorizontalContentAlignment="Center" Height="24" Width="92"/>
             <ComboBox x:Name="comparisonCombo3" SelectedIndex="0" Width="80" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="highest"/>
@@ -152,14 +158,14 @@
                 </ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="statsCombo3" SelectedIndex="0" Width="100" Height="24"/>
-            <Button Content="GO" Click="ExecuteThirdQuery" Width="30" Height="24"/>
+            <Button Content="GO" Click="ExecuteThirdQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Row="4" Grid.Column="1" Content="Example: 2 star hero with highest health" Height="30" Margin="4"/>
 
-        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="4">
+        <StackPanel Grid.Row="5" Orientation="Horizontal"  Margin="4,10,4,10">
             <ComboBox x:Name="synergyCombo6" Width="100" SelectedIndex="0" Height="24"/>
-            <Label Content="with" Height="24" Width="34"/>
+            <Label Content="with" Height="24" HorizontalContentAlignment="Center" Width="34"/>
             <ComboBox x:Name="comparisonCombo6" SelectedIndex="0" Width="80" Height="24">
                 <ComboBoxItem >
                     <TextBlock Text="highest"/>
@@ -169,17 +175,17 @@
                 </ComboBoxItem>
             </ComboBox>
             <ComboBox x:Name="statsCombo6" SelectedIndex="0" Width="100" Height="24"/>
-            <Button Content="GO" Click="ExecuteSixthQuery" Width="30" Height="24"/>
+            <Button Content="GO" Click="ExecuteSixthQuery" Background="{StaticResource MahApps.Brushes.Accent}" BorderBrush="{StaticResource MahApps.Brushes.Highlight}" Width="30" Height="24"/>
         </StackPanel>
 
         <Label Grid.Row="5" Grid.Column="1" Content="Example: knight with lowest move speed" Height="30" Margin="4"/>
 
         <Label x:Name="queryTitle" d:Content="Query title" Grid.Row="6" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="16" Margin="0,20,0,10"/>
 
-        <ListView Grid.Row="7" Grid.ColumnSpan="2" x:Name="resultsList" Width="400" DataContext="{Binding}" ScrollViewer.CanContentScroll="False">
+        <ListView Grid.Row="7" Grid.ColumnSpan="2" x:Name="resultsList" Width="400" DataContext="{Binding}" ScrollViewer.CanContentScroll="False" Background="{StaticResource MahApps.HamburgerMenu.Pane.Background}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border CornerRadius="6" BorderBrush="DarkGray" BorderThickness="1" Padding="4">
+                    <Border CornerRadius="6" Background="{StaticResource MahApps.Brushes.MenuItem.Background}"  BorderBrush="DarkGray" BorderThickness="1" Padding="4">
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="auto" />
@@ -222,4 +228,4 @@
             </ListView.ItemContainerStyle>
         </ListView>
     </Grid>
-</Window>
+</mah:MetroWindow>

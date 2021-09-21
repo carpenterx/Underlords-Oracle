@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MahApps.Metro.Controls;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -12,7 +13,7 @@ namespace Underlords_Oracle
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         private DictHeroes heroeDictionaries;
         private static List<string> statReferenceNames = new() { "Tier", "Health", "Mana", "DPS", "AttackRate", "MoveSpeed", "Range", "MagicResist", "Armor" };
